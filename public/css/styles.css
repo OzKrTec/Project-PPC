@@ -1,0 +1,180 @@
+@font-face {
+    font-family: product;
+    src: url(../assets/fonts/Raleway-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: text;
+    src: url(../assets/fonts/Raleway-Medium.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root{
+    --background-percent: #fc0000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: product;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.promo{
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    position: relative;
+    display: flex;
+}
+
+.promo h2{
+    margin-top: 0.5rem;
+    background-color: var(--background-percent);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+
+.promo img{
+    border-radius: 100%;
+    margin-left: -2rem;
+    margin-top: 0.2rem;
+}
+
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25;
+}
+
+.discount-price {
+    display: flex;
+    position: absolute;
+    margin-top: -18rem; 
+}
+
+.discount-price .icon img {
+    border-radius: 100%;
+    margin-left: -11.5rem;
+    margin-top: 0.3rem;
+    width: 40px;
+    
+}
+
+.discount-price .percent p{
+    margin-top: 0.7rem;
+    background-color: var(--background-percent);
+    color: white;
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 14.4rem;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: text;
+}
+
+
+.container .card .image img.pro{
+    width: 300px;
+    height: 295px;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+.image p.hidden{
+    margin: auto;  
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    padding-top: 145px;
+    border-radius: 8%;
+    background: rgba(252, 0, 0, 0.6);
+    transition: opacity .4s linear;
+    cursor: pointer;  
+    position: absolute;
+    margin-top: 0.001rem;
+    margin-left: 1rem;
+    opacity: 0;
+}
+
+.image p.hidden:hover{
+    opacity: 0.75; 
+}
+
+.container h4{
+    background-color: var(--background-percent);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding-top: 0.55rem;
+    padding-bottom: 0.2rem;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    width: 16.5rem;
+    height: 1.5rem;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 2rem;
+
+}
+
+.container .card .text{
+    margin-top: 1rem;
+    position: relative;
+    text-align: left;
+    font-size: 13px;
+    font-family: text;
+    margin-left: 2.5rem;
+}
+
+.container .price .price-total{
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color: red;
+    font-size: 11.5px;
+    font-family: text;
+}
+
+.container .price .price-total strong.now{
+    color: black;
+    font-size: 16px;
+}
+
+.container .price .price-total .separator{
+    font-size: 18px;
+}
+
+.container .price .price-total button{
+    background-color: var(--background-percent);
+    color: white;
+    border: none;
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: text;
+    cursor: pointer;
+}
