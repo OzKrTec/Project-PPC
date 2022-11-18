@@ -143,7 +143,7 @@ a, .text-menu{
 
 .slider-container{
     overflow: hidden;
-    border-bottom: 5px solid var(--clr-primary);
+    border-bottom: 5px solid var(--background-percent);
     width:100%    
 }
 
@@ -193,8 +193,6 @@ a, .text-menu{
     100%{margin-left:-400%;} 
     
 }
-
-/* Content-card */
 
 .container{
     width: 100%;
@@ -353,6 +351,72 @@ a, .text-menu{
     cursor: pointer;
 }
 
+
+
+.section-footer{
+    margin-top: 30rem;
+    display: flex;
+    background-color:var(--background-percent);
+    height: 250px;
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.primero{
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 80px;
+    width: 400px;
+    margin-left: 60px;
+}
+.primero p{
+    margin-bottom: .5rem;
+}
+.primero img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+hr{
+    width: 3px;
+    height: 200px;
+    background-color:var(--white);
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+} 
+
+.tercero{
+    display: flex;
+    flex-direction: column;
+}
+#redes img{
+    background-color: var(--white);
+    border-radius: 100%;
+    border-color: black;
+    border-width: -1px;
+    max-width: 15%;
+    width: 32px; 
+    margin-right: 9px;
+    margin-bottom: 80px;
+}
+.segundo {
+    margin-bottom: 45px;
+    width: 500px;
+}
+.segundo p{
+    margin-bottom: .5rem;
+}
+.tercero{
+    width: 350px;
+}
+.tercero p{
+    margin-bottom: 2rem;
+}
+    
+
+
 /* Media Query */
 @media (max-width: 374px){
     .slider-icon__arrow{
@@ -415,8 +479,38 @@ a, .text-menu{
         border-radius: 50%;
     }
     .slider-icon__arrow{
-        top:3rem;
+        top:13rem;
         font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    section{
+        flex-direction: column;
+        height: 400px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .primero{
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .primero img{
+        margin-bottom: 1px;
+    }
+    hr{
+        margin: 0;
+        visibility: hidden;
+    }
+    .segundo{
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .tercero{
+        margin-left: 20px;
+        width: none;
     }
 }
 
@@ -449,7 +543,7 @@ a, .text-menu{
     }
     
     .slider-icon__arrow{
-        top:4rem;
+        top:15rem;
         font-size: 3rem;
     }
 }
@@ -481,7 +575,7 @@ a, .text-menu{
     }
 
     .slider-icon__arrow{
-        top:6.5rem;
+        top:16rem;
         font-size: 3rem;
     }
 
@@ -511,7 +605,7 @@ a, .text-menu{
     }
 
     .slider-icon__arrow{
-        top:10rem;
+        top:18rem;
         font-size: 3rem;
     }
     
