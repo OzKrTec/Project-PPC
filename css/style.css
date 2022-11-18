@@ -1,0 +1,99 @@
+@font-face {
+    font-family: product;
+    src: url(../fuentes/Raleway-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    font-family: product;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+section{
+    display: flex;
+    background-color: red;
+    height: 250px;
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.primero{
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 80px;
+    width: 400px;
+    margin-left: 60px;
+}
+.primero p{
+    margin-bottom: -15px;
+}
+.primero img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+hr{
+    width: 3px;
+    height: 200px;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+} 
+
+.tercero{
+    display: flex;
+    flex-direction: column;
+}
+#redes img{
+    background-color: white;
+    border-radius: 100%;
+    border-color: black;
+    border-width: -1px;
+    max-width: 15%;
+    width: 32px; 
+    margin-right: 9px;
+    margin-bottom: 80px;
+}
+.segundo {
+    margin-bottom: 45px;
+    width: 500px;
+}
+.segundo p{
+    margin-bottom: -5px;
+}
+.tercero{
+    width: 350px;
+}
+@media screen and (max-width: 700px){
+    section{
+        flex-direction: column;
+        height: 400px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .primero{
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .primero img{
+        margin-bottom: 1px;
+    }
+    hr{
+        margin: 0;
+        visibility: hidden;
+    }
+    .segundo{
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .tercero{
+        margin-left: 20px;
+        width: none;
+    }
+}
+    
