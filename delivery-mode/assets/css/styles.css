@@ -1,0 +1,27 @@
+@font-face {
+    font-family: tittle;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: text;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root{
+    --background-percent: #e2001a;
+    --clr-secondary: #a41310;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: 100vh;
+    font-family: text;
+}
+

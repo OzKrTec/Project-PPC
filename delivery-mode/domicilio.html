@@ -11,15 +11,24 @@
 
     <!--favicon-->
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+
+    <!-- Ion icon -->
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
     <main>
         <div class="container-delivery">
             <div class="card-delivery">
-                <img src="" alt="" class="imagen">
+                <img src="assets/icons/delivery.png" alt="" class="imagen">
+                <div class="description">
+                    <h1>SERVICIO A DOMICILIO</h1>
+                    <p>Selecciona tu dirección</p>
+                </div>
                 <form>
                     <div class="input-text">
-                        <select name="genero" id="genero">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <select name="ciudad" id="ciudad">
+                            <i class="fa-solid fa-moped"></i>
                             <option value="">Ciudad</option>
                             <option value="">Ibagué</option>
                             <option value="">Bogotá</option>
@@ -27,10 +36,12 @@
                         </select>
                     </div>
                     <div class="input-text">
-                        <input type="text" name="nombre" id="nombre" placeholder="Local">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="direccion" id="direccion" placeholder="Dirección de entrega">
                     </div>
                     <div class="input-text">
-                        <input type="number" name="edad" id="edad" placeholder="Punto de Recogida">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="number" name="barrio" id="barrio" placeholder="Barrio">
                     </div>
                     <div>
                         <button class="boton">VERIFICAR</button>

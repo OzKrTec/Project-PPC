@@ -16,10 +16,15 @@
     <main>
         <div class="container-delivery">
             <div class="card-delivery">
-                <img src="" alt="" class="imagen">
+                <img src="assets/icons/entrega.png" alt="" class="imagen">
+                <div class="description">
+                    <h1>RECOGER EN TIENDA</h1>
+                    <p>Selecciona un punto de recogida</p>
+                </div>
                 <form>
                     <div class="input-text">
-                        <select name="genero" id="genero">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <select name="ciudad" id="ciudad">
                             <option value="">Ciudad</option>
                             <option value="">Ibagué</option>
                             <option value="">Bogotá</option>
@@ -27,10 +32,12 @@
                         </select>
                     </div>
                     <div class="input-text">
-                        <input type="text" name="nombre" id="nombre" placeholder="Local">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="local" id="local" placeholder="Local">
                     </div>
                     <div class="input-text">
-                        <input type="number" name="edad" id="edad" placeholder="Punto de Recogida">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="punto" id="punto" placeholder="Punto de Recogida">
                     </div>
                     <div>
                         <button class="boton">VERIFICAR</button>
