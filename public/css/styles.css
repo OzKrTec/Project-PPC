@@ -489,11 +489,12 @@ hr{
 
 
 @media screen and (max-width: 700px){
-    section{
+    .section-footer{
         flex-direction: column;
         height: 400px;
         justify-content: flex-start;
         align-items: flex-start;
+        margin-top: 185rem;
     }
     .primero{
         margin: 0;
@@ -504,8 +505,11 @@ hr{
         margin-bottom: 1px;
     }
     hr{
-        margin: 0;
-        visibility: hidden;
+        margin-left: -1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 31rem;
+        /*visibility: hidden;*/
     }
     .segundo{
         margin-left: 20px;
