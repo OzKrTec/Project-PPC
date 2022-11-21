@@ -430,7 +430,6 @@ hr{
 
 @media (min-width: 375px) and (max-width: 500px) {
 
-       
     .slider-text__msj{
         font-size: 1.3rem;
         
@@ -452,15 +451,15 @@ hr{
     }
     
     .slider-container .slider-image__menu img{
-        width:13rem;
-        height:10rem;
+        width: 13rem;
+        height: 10rem;
         border-radius: 50%;
     }
 
 }   
 
 @media (min-width: 501px) and (max-width: 700px) {  
-       
+
     .slider-text__msj{
         font-size: 1.7rem;
         
