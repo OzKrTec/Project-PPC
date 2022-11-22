@@ -1,14 +1,159 @@
-:root {
-    font-family: product;
-    src: url(../assets/fuentes/Raleway-ExtraBold.ttf);
+@font-face {
+    font-family: font;
+    src: url(../assets/font/Raleway-ExtraBold.ttf);
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: text;
+    src: url(../assets/font/Raleway-Medium.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/font/Raleway-Light.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 body{
-    font-family: product;
-    font-size: 17px;
+    font-family: font;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
 }
+.card-food{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+}
+#carne-asada{
+    width: 600px;
+}
+.img a{
+    font-family: text;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+.img #color{
+    font-family: text;
+    color: red;
+    font-weight: bold;
+}
+.img #carne-asada{
+    border-radius: 15px;
+}
+.img .descuento{
+    font-family: font;
+    display: flex;
+    position: relative;
+    bottom: 450px;
+    left: 433px;
+    height: 55px;
+}
+.img #icono{
+  position: relative;
+  z-index: 2;  
+}
 
+.img #red{
+    background-color: #DA1F05 ;
+    width: 140px;
+    text-align: center;
+    position: relative;
+    right: 27px;
+    z-index: 1;
+    color:white;
+    height: 45px;
+    top: 5px;
+}
+.img #red p{
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+.text{
+    margin-top: 33px;
+}
+.text h3{
+    background-color: red;
+    width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.text #text-pricipal{
+    font-family: Raleway;
+    font-size: 30px;
+    margin: 0;
+}
+.precio {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.precio hr{
+    margin: 15px;
+    background-color: red;
+    border-color: red;
+    height: 60px;
+    position: relative;
+}
+.precio #antes{
+    font-family: Raleway;
+    font-size: 30px;
+}
+#antes span {
+    text-decoration-line: line-through; 
+    text-decoration-color:red ;
+    text-decoration-style:initial ;
+}
+#ahora{
+    font-size: 45px;
+    color: red;
+}
+.text h4{
+    margin: 0;
+}
+
+
+
+
+
+
+
+#cubiertos{
+    font-family: font;
+    height: 30px;
+    width: 300px;
+}
+#bebida{
+    font-family: font;
+    height: 30px;
+    width: 350px;
+}
+select{
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    width: 100%;
+    height: 45px;
+    background: #fff url('../assets/icons/proximo.png') no-repeat;
+    background-size: 25px;
+    background-position:  right 10px center;
+    padding-left: 5px;
+    border-radius: 8px;
+    border:1px solid #000;
+}
+#mas{
+    width: 20px;
+}
+#menos{
+    width: 15px;
+}
