@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPC</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="container-delivery">
+            <div class="card-delivery">
+                <img class="logo" id="entrega" src="assets/icons/entrega.png" alt="">
+                <div class="description">
+                    <h1>RECOGER EN TIENDA</h1>
+                    <p>Selecciona un punto de recogida</p>
+                </div>
+                <form>
+                    <div class="input-text">
+                        <i class="fas fa-location-dot"></i>
+                        <select name="ciudad" id="ciudad">
+                            <option value="">Ciudad</option>
+                            <option value="">Ibagué</option>
+                            <option value="">Bogotá</option>
+                            <option value="">Medellín</option>
+                        </select>
+                        <div class="flecha"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                    <div class="input-text">
+                        <i class="fas fa-location-dot"></i>
+                        <input type="text" name="local" id="local" placeholder="Local">
+                    </div>
+                    <div class="input-text">
+                        <i class="fas fa-location-dot"></i>
+                        <input type="text" name="punto" id="punto" placeholder="Punto de Recogida">
+                    </div>
+                    <div>
+                        <button class="boton">VERIFICAR</button>
+                    </div>
+                </form>
+                <div class="mapa">
+                    <div class="imagen">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15897.66791234965!2d-74.88578749999999!3d5.0359355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1669071338940!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/e5b8fa4e0c.js" crossorigin="anonymous"></script>
+</body>
+</html>
