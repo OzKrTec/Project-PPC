@@ -26,7 +26,7 @@ body {
 
 .card-delivery{
     width: 400px;
-    height: 300px;
+    height: 315px;
     background:  #f4f4f4;
     top: 40%;
     left: 50%;
@@ -68,34 +68,106 @@ body {
     font-size: 25px;
     color: var(--background-percent);
     position: relative;
-    top: 1px;
-    margin-right: 5px;
+    top: 0.5px;
+    margin-right: -1px;
+    margin-left: 1px;
     background-color: white;
-    padding: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .card-delivery .input-text{
-    width: 200px;
-    padding: 2px;
+    width: 280px;
     border-radius: 10px;
     border: 1px solid var(--background-percent);
     display: flex;
     align-items: center;
     font-family: text;
     margin: 10px;
+    margin-left: 1.7rem;
 }
 
-::placeholder { color: var(--background-percent); }
+::placeholder { 
+    color: var(--background-percent); 
+    font-family: text; 
+    font-size: 17px;
+}
 
 .card-delivery .input-text input, select{
     border: none;
     color: var(--background-percent);
-    width: 168px;
+    width: 300px;
     padding: 7px;
-    border-radius: 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .card-delivery .input-text select{
-    width: 200px;
+    width: 300px;
     font-family: text;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.card-delivery .input-text .flecha{
+    margin-left: 15.9rem;
+    position: absolute;
+}
+
+.card-delivery .input-text .flecha .fas{
+    background-color: var(--background-percent);
+    color: white;
+    display: flex;
+    width: 20px;
+    height: 21px;
+    text-align: center;
+    padding-left: 6px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    margin-left: 0.5px;
+    cursor: pointer;
+}
+
+.card-delivery button.boton{
+    background-color: var(--background-percent);
+    border: none;
+    width: 285px;
+    height: 30px;
+    margin-left: 1.7rem;
+    border-radius: 10px;
+    color: white;
+    font-family: tittle;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.mapa .imagen iframe{
+    position: absolute;
+    display: flex;
+    margin-left: -8.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Media query */
+@media only screen and (max-width: 670px) {
+    .mapa .imagen iframe{
+    width: 25rem;
+    height: 27rem;
+    position: absolute;
+    display: flex;
+    margin-left: -2rem;
+    margin-top: 0.5rem;
+}
 }
