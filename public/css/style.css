@@ -2,7 +2,7 @@
     font-family: font;
     src: url(../assets/font/Raleway-ExtraBold.ttf);
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
 }
 @font-face {
     font-family: text;
@@ -26,11 +26,12 @@ body{
 }
 .card-food{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     margin-left: 20px;
 }
 #carne-asada{
     width: 600px;
+    height: 550px;
 }
 .img a{
     font-family: text;
@@ -53,10 +54,11 @@ body{
     bottom: 450px;
     left: 433px;
     height: 55px;
+    width: 250px;
 }
 .img #icono{
-  position: relative;
-  z-index: 2;  
+    position: relative;
+    z-index: 2;  
 }
 
 .img #red{
@@ -76,7 +78,8 @@ body{
     bottom: 5px;
 }
 .text{
-    margin-top: 33px;
+    margin-top: 45px;
+    margin-left: 33px;
 }
 .text h3{
     background-color: red;
@@ -90,13 +93,15 @@ body{
 }
 .text #text-pricipal{
     font-family: Raleway;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
+    padding-left: 40px;
 }
 .precio {
     display: flex;
     align-items: center;
     height: 80px;
+    padding-left: 40px;
 }
 .precio hr{
     margin: 15px;
@@ -120,40 +125,122 @@ body{
 }
 .text h4{
     margin: 0;
+    font-family:font ;
+    margin-bottom: 15px;
+    padding-left: 40px;
 }
-
-
-
-
-
-
-
+.select{
+    display: flex;
+    flex-direction: column;
+}
 #cubiertos{
     font-family: font;
-    height: 30px;
-    width: 300px;
+    height: 40px;
+    width: 550px;
+    margin-left: 40px;
+    margin-bottom: 4px;
 }
 #bebida{
     font-family: font;
-    height: 30px;
-    width: 350px;
+    height: 40px;
+    width: 550px;
+    margin-left: 40px;
 }
 select{
     appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-    width: 100%;
-    height: 45px;
     background: #fff url('../assets/icons/proximo.png') no-repeat;
     background-size: 25px;
     background-position:  right 10px center;
-    padding-left: 5px;
+    padding-left: 8px;
     border-radius: 8px;
     border:1px solid #000;
+    font-size: 18px;
+    color: red;
+}
+textarea{
+    margin-top: 15px;
+    margin-left: 40px;
+    font-family: text;
+    font-size: 17px;
+    border-color: #000;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+textarea::placeholder{
+    color:#000;
+}
+.agregar {
+    padding-left: 40px;
+    padding-top: 15px;
+}
+.agregar input{
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    font-family: font;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom:10px;
+    border-color:red ;
 }
 #mas{
     width: 20px;
+    position: relative;
+    right: 70px;
 }
 #menos{
-    width: 15px;
+    width: 20px;
+    position: relative;
+    right: 200px;
 }
+.agregar button{
+    padding-left: 10px;
+    font-family: font;
+    width: 285px;
+    height: 60px;
+    font-size: 35px;
+    border-radius:10px ;
+    border-color: red;
+    background-color: red;
+    color: white;
+}
+
+@media  screen and (max-width:800px){
+    .card-food{
+        grid-template-rows: 1fr;
+        grid-template-columns: none;
+    }
+    .text{
+        margin-left: 0px;
+        margin-top: -130px;
+    }
+    .text h3{
+        width: 560px;
+        margin-left: 20px;
+    }
+    .text #text-pricipal{
+        padding-left: 30px;
+    }
+    .text .precio{
+        padding-left: 30px;
+    }
+    .text h4{
+        padding-left: 30px;
+    }
+    .text #cubiertos{
+        margin-left: 30px;
+    }
+    #bebida{
+        margin-left: 30px;
+    }
+    textarea{
+        margin-left: 30px;
+    }
+    .agregar{
+        padding-left: 30px;
+    }
+}
+    
