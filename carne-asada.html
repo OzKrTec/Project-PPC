@@ -47,15 +47,15 @@
                 </div>
                 <textarea id="Observaciones" cols="58" rows="3" placeholder="Observaciones"></textarea>
                 <div class="agregar">
-                    <input type="text">
-                    <img id="mas" src="public/assets/icons/boton-de-simbolo-mas.png" alt="anadir">
-                    <img id="menos" src="public/assets/icons/menos.png" alt="menos">
-                    <button>Agregar</button>
+                    <button id="total">0</button>
+                    <img id="mas" src="public/assets/icons/anadir.png" alt="anadir" onclick="sumarUno()">
+                    <img id="menos" src="public/assets/icons/menos.png" alt="menos" onclick="restarUno()">
+                    <button id="boton">Agregar</button>
                 </div>
             </div>
         </section>
     </main>
-
+    
 </body>
-
+    <script src="public/js/agregar.js"></script>
 </html>

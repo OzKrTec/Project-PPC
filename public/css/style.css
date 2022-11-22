@@ -176,15 +176,16 @@ textarea::placeholder{
     padding-left: 40px;
     padding-top: 15px;
 }
-.agregar input{
-    width: 200px;
-    height: 55px;
+.agregar #total{
+    width: 210px;
+    height: 60px;
+    margin: 0;
     border-radius: 10px;
     font-family: font;
     text-align: center;
     font-size: 40px;
-    padding-bottom:10px;
     border-color:red ;
+    border: 2px solid  red;
 }
 #mas{
     width: 20px;
@@ -196,7 +197,7 @@ textarea::placeholder{
     position: relative;
     right: 200px;
 }
-.agregar button{
+.agregar #boton{
     padding-left: 10px;
     font-family: font;
     width: 285px;
