@@ -1,18 +1,18 @@
 @font-face {
     font-family: font;
-    src: url(../assets/font/Raleway-ExtraBold.ttf);
+    src: url(../assets/fonts/Raleway-ExtraBold.ttf);
     font-style: normal;
     font-weight: bold;
 }
 @font-face {
     font-family: text;
-    src: url(../assets/font/Raleway-Medium.ttf);
+    src: url(../assets/fonts/Raleway-Medium.ttf);
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: Raleway;
-    src: url(../assets/font/Raleway-Light.ttf);
+    src: url(../assets/fonts/Raleway-Light.ttf);
     font-style: normal;
     font-weight: normal;
 }
