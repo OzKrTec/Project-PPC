@@ -43,6 +43,7 @@
     margin-right: 8px;
     font-size: 14px;
     font-family: var(--font_direction-top);
+    font-weight: lighter;
     text-decoration: none;
     color:inherit;
 
@@ -121,4 +122,42 @@ a, .text-menu{
     height: 32px;
     margin-left: 12px;
     margin-top: -10px; 
+}
+
+/* media queries tablet */
+
+@media only screen and (max-width: 768px){
+    .container-menu{
+        overflow:auto;
+    }
+
+    .container-menu::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .container-menu::-webkit-scrollbar:horizontal {
+        height: 10px;
+    }
+
+    .container-menu::-webkit-scrollbar-thumb {
+        background-color:var(--color-red);
+        border-radius: 20px;
+        border: 2px solid #000000;
+    }
+
+    
+    .container-options .options-user{
+        width: 38px;
+        height: 38px;
+    }
+
+    a, .text-menu{
+        white-space:normal;
+    }
+
+    .direction-options{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
 }
