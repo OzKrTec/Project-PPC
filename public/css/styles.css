@@ -497,7 +497,7 @@ main{
 /* Media Query */
 @media (max-width: 374px) {
     .slider-icon__arrow {
-        visibility: hidden;
+        display:none;
 
     }
 }
@@ -513,8 +513,10 @@ main{
     }
 
     .slider-icon__arrow {
-        visibility: hidden;
-
+        font-size: 2rem;
+        top: 3.5rem;
+        z-index: 1;
+        cursor: pointer;   
     }
 
     .slider-container .slider-image__menu img {
@@ -561,9 +563,8 @@ main{
     }
 
     .slider-icon__arrow {
-        top: 13rem;
+        top: 4rem;
         font-size: 2.5rem;
-        visibility: hidden;
     }
 
     .container {
@@ -702,16 +703,9 @@ main{
         height:15rem;
     }
 
-
-    /* .slider-content__text .slider-text__terms {
-        margin-left: 2.5rem;
-        font-size: .9rem;
-    } */
-
     .slider-icon__arrow {
-        top: 5em;
+        top: 5rem;
         font-size: 3rem;
-        visibility: hidden;
     }
 
     .container {
@@ -837,13 +831,13 @@ main{
         }
         
         .menu img {
-            width: 3rem;
+            width: 2.5rem;
             padding: 0;
         }
     
         .text-menu {
             font-family: text;
-            font-size: .3rem;
+            font-size: .4rem;
             font-weight: 100;
             text-decoration: none;
             color: inherit;
@@ -877,14 +871,24 @@ main{
             height:15rem;
         }
 
-    .slider-icon__arrow {
-        top: 6em;
-        font-size: 3rem;
-    }
+        .slider-icon__arrow {
+            top: 5rem;
+            font-size: 3rem;
+        }
 
 }
 
 @media (min-width: 1200px) {
+    .menu img {
+        width: 3rem;
+        padding: 0;
+    }
+
+    .text-menu {
+        font-family: text;
+        font-size: .5rem;
+        font-weight: 100;
+    }
 
     .slider-container{
         height: 20rem;
@@ -902,7 +906,7 @@ main{
     }   
 
     .slider-icon__arrow {
-        top: 20.5rem;
+        top: 7.5rem;
         font-size: 3rem;
     }
 }
@@ -918,6 +922,11 @@ main{
 
     .text-menu {
         font-size: 15px;
+    }
+
+    .slider-icon__arrow {
+        top: 7.5rem;
+        font-size: 3rem;
     }
 }
 
