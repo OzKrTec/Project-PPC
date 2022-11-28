@@ -937,7 +937,7 @@ main{
     }
 }
 
-@media screen and (max-width: px) {
+@media screen and (min-width: 375px) and (max-width: 738px) {
     .section-footer {
         padding-top: 15px;
         flex-direction: column;
