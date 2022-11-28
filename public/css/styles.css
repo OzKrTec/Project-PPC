@@ -502,7 +502,7 @@ main{
     }
 }
 
-@media (min-width: 375px) and (max-width: 500px) {
+@media (min-width: 375px) and (max-width: 654px) {
     .menu-mobile {
         margin: 1rem 1rem;
     }
@@ -524,9 +524,18 @@ main{
         height: 10rem;
         border-radius: 50%;
     }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container .card{
+        margin: 0px auto;
+    }
+
 }
 
-@media (min-width: 501px) and (max-width: 738px) {
+@media (min-width: 655px) and (max-width: 738px) {
 
     .menu-mobile {
         margin: 1rem 1rem;
@@ -614,13 +623,6 @@ main{
         height: 290px;
     }
 }
-
-@media (max-width: 620px){
-    .container {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 @media (min-width: 739px) and (max-width: 930px) {
 
