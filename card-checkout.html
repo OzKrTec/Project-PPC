@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCC</title>
+    <link rel="stylesheet" href="public/css/card-checkout.css">
+</head>
+
+<body>
+    <section class="card-checkOut">
+        <div class="text-one">
+            <img src="public/assets/img/rebobinar-angulos-de-flechas-dobles.png" alt="">
+            <h3>CHECK OUT</h3>
+            <img src="public/assets/img/flechas-dobles-hacia-la-derecha-de-avance-rapido.png" alt="">
+        </div>
+
+        <div class="card-container">
+            <div class="container-title">
+                <h2 class="title">Tus Datos</h2>
+                <img class="doble-arrow" src="public/assets/img/flechas-dobles-hacia-la-derecha-de-avance-rapido.png" alt="Simbolo">
+            </div>
+
+            <div class="container-logo">
+                <img class="logo-user" src="public/assets/icons/usuario.png" alt="logo-usuario">
+            </div> 
+
+            <div class="container-text">
+                <p>Nombre: Andres David</p> 
+                <p> Apellido: Borrais Velandia</p> 
+                <p> Correo electrónico: aborrais@gmail.com</p> 
+                <p>Teléfono o móvil: 3144823206</p>
+            </div>
+        </div>
+
+        <div class="card-container" id="card-two">
+            <div class="container-title">
+                <h2 class="title">Método de Entrega</h2>
+                <img class="doble-arrow" src="public/assets/img/flechas-dobles-hacia-la-derecha-de-avance-rapido.png" alt="Simbolo">
+            </div>
+
+            <div class="logo-secundarios">
+                <img src="public/assets/icons/entrega-de-comida.png" alt="entregar">
+                <img src="public/assets/icons/recoger.png" alt="recoger">
+            </div>
+
+            <div class="container-logo" id="logo-two">
+                <img class="logo-user" src="public/assets/icons/alfiler.png" alt="logo-usuario">
+            </div>
+
+            <div class="container-text" id="text">
+                <p id="direccion">¿Donde quiero que me lo lleven?Dirección 1</p>
+                <form class="direccion">
+                    <input type="radio" name="direccion1"><span>Dirección 1</span>  
+                    <br>
+                    <input type="radio" name="direccion2" checked><span>Dirección 2</span> 
+                </form>
+                <p id="option">¿Cuándo lo quieres?:</p>
+                <form class="option">
+                    <input type="radio"><span>Opción 1 </span> 
+                    <br>
+                    <input type="radio" checked><span>Opción 2</span> 
+                </form>
+            </div>
+
+        </div>
+
+        <div class="card-container">
+            <div class="container-title">
+                <h2 class="title">Método de Pago</h2>
+                <img class="doble-arrow" src="public/assets/img/flechas-dobles-hacia-la-derecha-de-avance-rapido.png" alt="Simbolo">
+            </div>
+
+            <div class="container-logo">
+                <img class="logo-user" src="public/assets/icons/dolar.png" alt="logo-usuario">
+            </div>
+            <div class="container-pago">
+                <p>Subtotal <span id="subtotal">$ 20.900</span></p>
+                <p>Envio    <span id="envio">$ 5.500</span></p>
+                <p id="Total">Total    <span id="total">$ 26.400</span></p>
+            </div>
+        </div>
+        <div class="boton">
+            <button>HACER PEDIDO</button>
+        </div>
+    </section>
+</body>
+
+</html>
