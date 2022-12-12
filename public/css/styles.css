@@ -938,6 +938,44 @@ main{
     }
 }
 
+@media screen and (min-width: 375px) and (max-width: 654px) {
+
+.direction-options{
+    display: none;
+}
+.container-banner{
+    height: 6em;
+}
+.container-logo{
+    width: 120px;
+    height: 120px;
+    left: -2em;
+    top: -1.5em;
+}
+.container-logo img{
+    width: 4em;
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+.container-options{
+    position: relative;
+    right: 0;
+    left: 160px;
+    top: 3px;
+}
+.container-options .options-user{
+    width: 2em ;
+    height: 2em ;
+}
+.container-options #Options{
+    height: 2em;
+    width: 2em;
+}
+.menu-mobile{
+    margin-bottom: 7rem;
+}    
+
 @media screen and (min-width: 375px) and (max-width: 738px) {
     .section-footer {
         padding-top: 15px;
